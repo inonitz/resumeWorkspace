@@ -1,0 +1,20 @@
+{
+  // Build only on demand (Ctrl+Alt+B), never on save.
+  "latex-workshop.latex.autoBuild.run": "never",
+  // Pick the recipe for your OS once; the editor remembers it.
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.latex.recipes": [
+    { "name": "build (Linux/macOS)", "tools": ["build-sh"] },
+    { "name": "build (Windows)", "tools": ["build-ps1"] }
+  ],
+  "latex-workshop.latex.tools": [
+    { "name": "build-sh", "command": "sh", "args": ["%WORKSPACE_FOLDER%/scripts/build.sh", "%DOC_EXT%"] },
+    {
+      "name": "build-ps1",
+      "command": "powershell",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "%WORKSPACE_FOLDER%/scripts/build.ps1", "%DOC_EXT%"]
+    }
+  ],
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/out",
+  "latex-workshop.view.pdf.viewer": "tab"
+}

@@ -1,0 +1,88 @@
+%-------------------------
+% Example resume for a fictional person.
+% Copy this file into private/main.tex and replace the content with your own.
+% The layout and the \resume... commands are defined in resume.sty.
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
+\usepackage{resume}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Alex Example} \\ \vspace{1pt}
+    \small +1-555-0100 $|$ \href{mailto:alex@example.com}{\underline{alex@example.com}} $|$
+    \href{https://www.linkedin.com/in/alex-example}{\underline{LinkedIn}} $|$
+    \href{https://github.com/alex-example}{\underline{GitHub}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+    \resumeSubHeadingListStart
+        \item{
+            Software engineer with experience in embedded systems, compilers and build tooling.
+        }
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+
+        \resumeSubheading
+            {Example Robotics}{March 2024 -- Present}
+            {Firmware Engineer}{Springfield}
+            \resumeItemListStart
+                \resumeItem{Wrote a motor-control driver that cut response time by 30\%}
+                \resumeItem{Added hardware-in-the-loop tests to the release pipeline}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Sample Software}{June 2022 -- February 2024}
+            {Junior Developer}{Shelbyville}
+            % \resumeSubSubheading shows a second role at the same employer.
+            \resumeSubSubheading
+                {Intern}{June 2021 -- May 2022}
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+            {\textbf{Tiny Compiler} $|$ \emph{C, LLVM, CMake}}
+            {2023 -- 2024}
+        \resumeProjectHeading
+            {A compiler for a small teaching language}
+            {\href{https://github.com/alex-example/tiny-compiler}{\underline{github}}}
+            \resumeItemListStart
+                \resumeItem{Implemented a parser, type checker and LLVM IR code generator}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{
+            \item{
+                \textbf{Languages}{: C, C++, Python} \\
+                \textbf{Tools}{: Git, CMake, GDB, Docker} \\
+            }
+        }
+    \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Example University}{Springfield}
+            {B.Sc. in Computer Science}{2018 -- 2022}
+    \resumeSubHeadingListEnd
+
+\end{document}
